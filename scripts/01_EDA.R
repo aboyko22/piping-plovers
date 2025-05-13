@@ -5,6 +5,7 @@ library(tidyverse)
 local_data <- read_csv("data/cleaned_data/cook_county_data.csv")
 cook_plovers <- read_csv("data/cleaned_data/cook_county_plovers.csv")
 nh_data <- read_csv("data/cleaned_data/nh_data.csv")
+nh_plovers <- read_csv("data/cleaned_data/nh_plovers.csv")
 
 # functions for eda ----
 create_histogram <- function(df, var) {
@@ -68,7 +69,7 @@ for (var in plotting_list) {
 total_props <- local_data %>%
   filter(common_name == "Piping Plover") %>%
   mutate(month = month(observation_date), week = week(observation_date)) %>%
-  summarize(count = n_distinct(group_identifier), .by = c(week, month)) %>%
+  summarize(count = n_distinct(sampling_event_identifier), .by = c(week, month)) %>%
   mutate(count = count / max(count))
 
 total_props %>%
@@ -79,3 +80,37 @@ total_props %>%
   coord_fixed(xlim = c(1, 52), ylim = c(-1, 1)) +
   theme_void() +
   theme(panel.border = element_rect(color = "black", fill = NA))
+
+# relative distributions
+nh_data %>%
+  filter(county == "Rockingham") %>%
+  mutate(year = year(observation_date),
+         is_plover = if_else(common_name == "Piping Plover", "yes", "no")) %>%
+  summarize(count = n_distinct(sampling_event_identifier), .by = c(year, is_plover)) %>%
+  pivot_wider(names_from = is_plover, values_from = count) %>%
+  mutate(prop = yes / (yes + no), id = "nh") %>%
+  
+  rbind(local_data %>%
+  mutate(year = year(observation_date),
+         is_plover = if_else(common_name == "Piping Plover", "yes", "no")) %>%
+  summarize(count = n_distinct(sampling_event_identifier), .by = c(year, is_plover)) %>%
+  pivot_wider(names_from = is_plover, values_from = count) %>%
+  mutate(prop = yes / (yes + no), id = "chi")) %>%
+  ggplot(aes(x = year, y = prop, group = id, color = id)) +
+  geom_point() +
+  geom_line()
+
+# total observation growth
+local_data %>%
+  mutate(year = year(observation_date), is_plover = if_else(common_name == "Piping Plover", "yes", "no")) %>%
+  summarize(n = n_distinct(sampling_event_identifier), .by = c(year, is_plover)) %>%
+  pivot_wider(names_from = is_plover, values_from = n) %>%
+  mutate(perc = yes / (yes + no) * 100)
+
+# where they are (chi)
+local_data %>%
+  filter(common_name == "Piping Plover") %>%
+  mutate(montrose = if_else(str_detect(locality, pattern = "Montrose"), "yes", "no"), week = week(observation_date)) %>%
+  summarize(count = n_distinct(sampling_event_identifier), .by = c(montrose, locality)) %>% slice_max(n = 10, order_by = count) %>%
+  ggplot(aes(x = reorder(locality, -count), y = count, fill = montrose)) +
+  geom_col()

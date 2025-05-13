@@ -51,8 +51,11 @@ rsconnect/
 # Data
 data/ebd_US-IL-031_202101_202501_smp_relDec-2024.txt
 data/ebd_US-IL-031_pipplo_relMar-2025.txt
+data/ebd_US-NH_202101_202505_relMar-2025.txt
+data/ebd_US-NH_pipplo_relMar-2025.txt
 
 data/cleaned_data/nh_data.csv
+data/cleaned_data/nh_plovers.csv
 data/cleaned_data/cook_county_data.csv
 data/cleaned_data/cook_county_plovers.csv
 
