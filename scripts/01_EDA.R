@@ -41,13 +41,11 @@ create_density_plot <- function(df, var) {
   
 }
 
-hist_list <- c("observation_count", "latitude", "longitude", "time_observations_started",
-               "duration_minutes", "number_observers", "effort_distance_mi")
+hist_list <- c("observation_count", "time_observations_started", "duration_minutes",
+               "number_observers", "effort_distance_mi")
 dens_list <- c("observation_count", "observation_date", "time_observations_started")
-bar_list <- c("category", "common_name", "exotic_code", "breeding_code",
-              "age_sex", "county", "iba_code", "bcr_code", "usfws_code",
-              "locality", "locality_type", "all_species_reported",
-              "has_media")
+bar_list <- c("common_name", "breeding_code", "age_sex", "locality", "locality_type",
+              "all_species_reported", "has_media")
 
 plotting_list <- union(union(hist_list, dens_list), bar_list)
 
@@ -66,19 +64,16 @@ for (var in plotting_list) {
 }
 
 # data messing around ----
-# frequency bar plot (see ebird)
-total_props <- local_data %>%
+# frequency bar plot
+local_data %>%
   filter(common_name == "Piping Plover") %>%
   mutate(month = month(observation_date), week = week(observation_date)) %>%
   summarize(count = n_distinct(sampling_event_identifier), .by = c(week, month)) %>%
-  mutate(count = count / max(count))
-
-total_props %>%
+  mutate(count = count / max(count)) %>%
   ggplot(aes(x = week, y = count)) +
   geom_col(fill = "lightblue") +
   geom_col(aes(y = -count), fill = "lightblue") +
   geom_vline(xintercept = 19, color = "red") +
-  coord_fixed(xlim = c(1, 52), ylim = c(-1, 1)) +
   theme_void() +
   theme(panel.border = element_rect(color = "black", fill = NA))
 
@@ -101,12 +96,8 @@ nh_data %>%
   geom_point() +
   geom_line()
 
-# total observation growth
-local_data %>%
-  mutate(year = year(observation_date), is_plover = if_else(common_name == "Piping Plover", "yes", "no")) %>%
-  summarize(n = n_distinct(sampling_event_identifier), .by = c(year, is_plover)) %>%
-  pivot_wider(names_from = is_plover, values_from = n) %>%
-  mutate(perc = yes / (yes + no) * 100)
+# higher proportion of pipl observations in chicago
+# this is despite fewer birds in the area
 
 # where they are (chi)
 local_data %>%
@@ -116,6 +107,8 @@ local_data %>%
   ggplot(aes(x = reorder(locality, -count), y = count, fill = montrose)) +
   geom_col()
 
+# importance of montrose cannot be understated
+# although this was already known
 
 # migration in 2024
 us_map <- map_data(map = "state") %>%
@@ -128,3 +121,16 @@ plovers_2024 %>%
   geom_polygon(data = us_map, aes(x = long, y = lat, group = group), color = "black", fill = "grey90") +
   geom_point(alpha = 0.1, color = "violet", aes(size = observation_count)) +
   facet_wrap(~month)
+
+# original plan was to use gganimate with this
+# pivoted to using flourish for cleaner animation
+
+# how people experience pipl differently
+local_data %>%
+  mutate(is_plover = if_else(common_name == "Piping Plover", "yes", "no")) %>%
+  ggplot(aes(x = duration_minutes, group = is_plover, color = is_plover)) +
+  geom_density()
+
+# for plovers:
+# longer observation times, fewer people per group, more media per checklist,
+# more weekday observations, over double breeding/behavior information
