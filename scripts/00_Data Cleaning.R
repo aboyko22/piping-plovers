@@ -1,6 +1,5 @@
 # load packages ----
 library(tidyverse)
-library(rebird)
 
 # load local data ----
 local_data <- read_delim("data/ebd_US-IL-031_202101_202501_smp_relDec-2024.txt") %>%
@@ -22,117 +21,59 @@ nh_plovers <- read_delim("data/ebd_US-NH_pipplo_relMar-2025.txt") %>%
 # from the ebd, saved locally only
 # all documented observations of pipl in cook county, il and nh
 
-# data cleaning ----
-local_data <- local_data %>%
-  mutate(effort_distance_mi = round(effort_distance_km / 1.60934, digits = 2)) %>%
-  
-  # select previously chosen variables
-  select(category, common_name, scientific_name, subspecies_common_name,
-         exotic_code, observation_count, breeding_code, behavior_code,
-         age_sex, country, state, county, iba_code, bcr_code, usfws_code,
-         locality, locality_type, latitude, longitude, observation_date,
-         time_observations_started, observer_id, sampling_event_identifier,
-         duration_minutes, number_observers, all_species_reported,
-         group_identifier, has_media, species_comments, effort_distance_mi) %>%
-  
-  # convert variable types
-  mutate(observation_count = as.double(observation_count),
-         locality_type = factor(locality_type),
-         all_species_reported = as.logical(all_species_reported),
-         has_media = as.logical(has_media),
-         
-  # remove extreme outliers
-         observation_count = case_when(
-           observation_count > 1000 ~ 1000, # few really big numbers
-           .default = observation_count),
-         duration_minutes = case_when(
-           duration_minutes > 1440 ~ NA, # longer than a day
-           .default = duration_minutes),
-         number_observers = case_when(
-           number_observers > 100 ~ NA, # Obvious weirdness
-           .default = number_observers)) 
+## 2024 country wide plover data ----
+plovers_2024 <- read_delim("data/ebd_US_pipplo_202401_202501_smp_relMar-2025.txt") %>%
+  janitor::clean_names()
 
-## repeat process for nh data ----
-nh_data <- nh_data %>%
-  mutate(effort_distance_mi = round(effort_distance_km / 1.60934, digits = 2)) %>%
-  
-  select(category, common_name, scientific_name, subspecies_common_name,
-         exotic_code, observation_count, breeding_code, behavior_code,
-         age_sex, country, state, county, iba_code, bcr_code, usfws_code,
-         locality, locality_type, latitude, longitude, observation_date,
-         time_observations_started, observer_id, sampling_event_identifier,
-         duration_minutes, number_observers, all_species_reported,
-         group_identifier, has_media, species_comments, effort_distance_mi) %>%
-  
-  mutate(observation_count = as.double(observation_count),
-         locality_type = factor(locality_type),
-         all_species_reported = as.logical(all_species_reported),
-         has_media = as.logical(has_media),
-         
-         observation_count = case_when(
-           observation_count > 1000 ~ 1000,
-           .default = observation_count),
-         duration_minutes = case_when(
-           duration_minutes > 1440 ~ NA,
-           .default = duration_minutes),
-         number_observers = case_when(
-           number_observers > 100 ~ NA,
-           .default = number_observers)) 
+# from the ebd, saved locally only
+# all pipl observations from 2024 in united states
 
+# data cleaning function ----
+ebd_cleaning <- function(df) {
+  
+  df %>%
+    mutate(effort_distance_mi = round(effort_distance_km / 1.60934, digits = 2)) %>%
+    
+    # select previously chosen variables
+    select(common_name, observation_count, breeding_code, behavior_code,
+           age_sex, country, state, county, usfws_code, locality, locality_type,
+           latitude, longitude, observation_date, time_observations_started, observer_id,
+           sampling_event_identifier, duration_minutes, number_observers, all_species_reported,
+           group_identifier, has_media, species_comments, effort_distance_mi) %>%
+    
+    # convert variable types
+    mutate(observation_count = as.double(observation_count),
+           locality_type = factor(locality_type),
+           all_species_reported = as.logical(all_species_reported),
+           has_media = as.logical(has_media),
+           
+           # remove extreme outliers
+           observation_count = case_when(
+             observation_count > 1000 ~ 1000, # few really big numbers
+             .default = observation_count),
+           duration_minutes = case_when(
+             duration_minutes > 1440 ~ NA, # longer than a day
+             .default = duration_minutes),
+           number_observers = case_when(
+             number_observers > 100 ~ NA, # Obvious weirdness
+             .default = number_observers),
+           
+           # add derived date columns
+           dotw = wday(observation_date),
+           week = week(observation_date),
+           month = month(observation_date),
+           year = year(observation_date)) 
+  
+}
 
-## same process for plover data ----
-cook_plovers <- cook_plovers %>%
-  mutate(effort_distance_mi = round(effort_distance_km / 1.60934, digits = 2)) %>%
-  
-  select(category, common_name, scientific_name, subspecies_common_name,
-         exotic_code, observation_count, breeding_code, behavior_code,
-         age_sex, country, state, county, iba_code, bcr_code, usfws_code,
-         locality, locality_type, latitude, longitude, observation_date,
-         time_observations_started, observer_id, sampling_event_identifier,
-         duration_minutes, number_observers, all_species_reported,
-         group_identifier, has_media, species_comments, effort_distance_mi) %>%
-  
-  mutate(observation_count = as.double(observation_count),
-         locality_type = factor(locality_type),
-         all_species_reported = as.logical(all_species_reported),
-         has_media = as.logical(has_media),
-         
-         observation_count = case_when(
-           observation_count > 1000 ~ 1000,
-           .default = observation_count),
-         duration_minutes = case_when(
-           duration_minutes > 1440 ~ NA,
-           .default = duration_minutes),
-         number_observers = case_when(
-           number_observers > 100 ~ NA,
-           .default = number_observers)) 
+# apply to data sets ----
+local_data <- ebd_cleaning(local_data)
+nh_data <- ebd_cleaning(nh_data)
 
-## and nh plover data ----
-nh_plovers <- nh_plovers %>%
-  mutate(effort_distance_mi = round(effort_distance_km / 1.60934, digits = 2)) %>%
-  
-  select(category, common_name, scientific_name, subspecies_common_name,
-         exotic_code, observation_count, breeding_code, behavior_code,
-         age_sex, country, state, county, iba_code, bcr_code, usfws_code,
-         locality, locality_type, latitude, longitude, observation_date,
-         time_observations_started, observer_id, sampling_event_identifier,
-         duration_minutes, number_observers, all_species_reported,
-         group_identifier, has_media, species_comments, effort_distance_mi) %>%
-  
-  mutate(observation_count = as.double(observation_count),
-         locality_type = factor(locality_type),
-         all_species_reported = as.logical(all_species_reported),
-         has_media = as.logical(has_media),
-         
-         observation_count = case_when(
-           observation_count > 1000 ~ 1000,
-           .default = observation_count),
-         duration_minutes = case_when(
-           duration_minutes > 1440 ~ NA,
-           .default = duration_minutes),
-         number_observers = case_when(
-           number_observers > 100 ~ NA,
-           .default = number_observers)) 
+cook_plovers <- ebd_cleaning(cook_plovers)
+nh_plovers <- ebd_cleaning(nh_plovers)
+
+plovers_2024 <- ebd_cleaning(plovers_2024)
 
 # save out cleaned files ----
 write_csv(local_data, file = "data/cleaned_data/cook_county_data.csv")
@@ -140,6 +81,8 @@ write_csv(cook_plovers, file = "data/cleaned_data/cook_county_plovers.csv")
 
 write_csv(nh_data, file = "data/cleaned_data/nh_data.csv")
 write_csv(nh_plovers, file = "data/cleaned_data/nh_plovers.csv")
+
+write_csv(plovers_2024, file = "data/cleaned_data/plovers_2024.csv")
 
 # included in .gitignore for disclosure reasons
 # csv over rda objects for fact checking cross platform

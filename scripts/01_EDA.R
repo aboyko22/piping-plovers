@@ -6,6 +6,7 @@ local_data <- read_csv("data/cleaned_data/cook_county_data.csv")
 cook_plovers <- read_csv("data/cleaned_data/cook_county_plovers.csv")
 nh_data <- read_csv("data/cleaned_data/nh_data.csv")
 nh_plovers <- read_csv("data/cleaned_data/nh_plovers.csv")
+plovers_2024 <- read_csv("data/cleaned_data/plovers_2024.csv")
 
 # functions for eda ----
 create_histogram <- function(df, var) {
@@ -114,3 +115,16 @@ local_data %>%
   summarize(count = n_distinct(sampling_event_identifier), .by = c(montrose, locality)) %>% slice_max(n = 10, order_by = count) %>%
   ggplot(aes(x = reorder(locality, -count), y = count, fill = montrose)) +
   geom_col()
+
+
+# migration in 2024
+us_map <- map_data(map = "state") %>%
+  mutate(state = state.abb[match(region, tolower(state.name))]) %>%
+  select(long, lat, group, state)
+
+plovers_2024 %>%
+  mutate(month = month(observation_date)) %>%
+  ggplot(aes(x = longitude, y = latitude)) +
+  geom_polygon(data = us_map, aes(x = long, y = lat, group = group), color = "black", fill = "grey90") +
+  geom_point(alpha = 0.1, color = "violet", aes(size = observation_count)) +
+  facet_wrap(~month)
