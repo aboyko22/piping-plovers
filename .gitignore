@@ -32,9 +32,10 @@ vignettes/*.pdf
 *_cache/
 /cache/
 
-# Temporary files created by R markdown
+# Temporary files
 *.utf8.md
 *.knit.md
+*.DS_Store
 
 # R Environment Variables
 .Renviron
@@ -60,4 +61,3 @@ data/cleaned_data/nh_plovers.csv
 data/cleaned_data/cook_county_data.csv
 data/cleaned_data/cook_county_plovers.csv
 data/cleaned_data/plovers_2024.csv
-
