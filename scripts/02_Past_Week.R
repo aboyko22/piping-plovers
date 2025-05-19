@@ -5,9 +5,9 @@ library(hms)
 library(jsonlite)
 
 # write out formatted citings ----
-recent_citings <- ebirdregion(loc = "US-IL-031", species = "pipplo") %>%
+recent_citings <- ebirdregion(loc = "US-IL-031", species = "pipplo", back = 30) %>%
   filter(!is.na(howMany)) %>%
-  slice_head(n = 5) %>%
+  slice_head(n = 6) %>%
   
   mutate(locName = sub("[,(].*$", "", locName),
     

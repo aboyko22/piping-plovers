@@ -131,6 +131,14 @@ local_data %>%
   ggplot(aes(x = duration_minutes, group = is_plover, color = is_plover)) +
   geom_density()
 
+cook_plovers %>%
+  filter(year > 2019) %>%
+  summarize(mean = mean(observation_count, na.rm = TRUE))
+
+nh_plovers %>%
+  filter(year > 2019) %>%
+  summarize(mean = mean(observation_count, na.rm = TRUE))
+
 # for plovers:
 # longer observation times, fewer people per group, more media per checklist,
 # more weekday observations, over double breeding/behavior information

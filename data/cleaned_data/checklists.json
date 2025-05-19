@@ -2,16 +2,30 @@
   {
     "locName": "Montrose Point Bird Sanctuary",
     "howMany": 1,
-    "nice_date": "May 17",
-    "nice_time": "12:23 PM",
-    "checklist": "ebird.org/checklist/S239347526"
+    "nice_date": "May 18",
+    "nice_time": "05:20 PM",
+    "checklist": "ebird.org/checklist/S240002214"
+  },
+  {
+    "locName": "Montrose Bird Sanctuary",
+    "howMany": 1,
+    "nice_date": "May 18",
+    "nice_time": "05:07 PM",
+    "checklist": "ebird.org/checklist/S239990268"
   },
   {
     "locName": "Montrose Dunes",
+    "howMany": 2,
+    "nice_date": "May 18",
+    "nice_time": "09:11 AM",
+    "checklist": "ebird.org/checklist/S239712771"
+  },
+  {
+    "locName": "Montrose Beach",
     "howMany": 1,
     "nice_date": "May 17",
-    "nice_time": "11:15 AM",
-    "checklist": "ebird.org/checklist/S239321228"
+    "nice_time": "06:00 AM",
+    "checklist": "ebird.org/checklist/S240095334"
   },
   {
     "locName": "Beck Lake Forest Preserve",
@@ -19,13 +33,6 @@
     "nice_date": "May 16",
     "nice_time": "09:30 AM",
     "checklist": "ebird.org/checklist/S238857554"
-  },
-  {
-    "locName": "Montrose Beach",
-    "howMany": 3,
-    "nice_date": "May 14",
-    "nice_time": "03:47 PM",
-    "checklist": "ebird.org/checklist/S238115879"
   },
   {
     "locName": "Lake Michigan US-IL ",
