@@ -1,10 +1,24 @@
 [
   {
+    "locName": "Montrose Beach",
+    "howMany": 2,
+    "nice_date": "May 21",
+    "nice_time": "06:53 AM",
+    "checklist": "ebird.org/checklist/S240861930"
+  },
+  {
     "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 1,
+    "howMany": 2,
     "nice_date": "May 20",
-    "nice_time": "10:45 AM",
-    "checklist": "ebird.org/checklist/S240646997"
+    "nice_time": "05:45 PM",
+    "checklist": "ebird.org/checklist/S240818521"
+  },
+  {
+    "locName": "Montrose Dunes",
+    "howMany": 3,
+    "nice_date": "May 20",
+    "nice_time": "02:00 PM",
+    "checklist": "ebird.org/checklist/S240789747"
   },
   {
     "locName": "Montrose Bird Sanctuary",
@@ -12,20 +26,6 @@
     "nice_date": "May 18",
     "nice_time": "05:07 PM",
     "checklist": "ebird.org/checklist/S239990268"
-  },
-  {
-    "locName": "Montrose Dunes",
-    "howMany": 2,
-    "nice_date": "May 18",
-    "nice_time": "10:03 AM",
-    "checklist": "ebird.org/checklist/S240158530"
-  },
-  {
-    "locName": "Montrose Beach",
-    "howMany": 1,
-    "nice_date": "May 17",
-    "nice_time": "06:00 AM",
-    "checklist": "ebird.org/checklist/S240095334"
   },
   {
     "locName": "Beck Lake Forest Preserve",
