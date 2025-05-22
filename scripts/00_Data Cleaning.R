@@ -23,7 +23,8 @@ nh_plovers <- read_delim("data/ebd_US-NH_pipplo_relMar-2025.txt") %>%
 
 ## 2024 country wide plover data ----
 plovers_2024 <- read_delim("data/ebd_US_pipplo_202401_202501_smp_relMar-2025.txt") %>%
-  janitor::clean_names()
+  janitor::clean_names() %>%
+  filter(year(observation_date) == 2024)
 
 # from the ebd, saved locally only
 # all pipl observations from 2024 in united states
