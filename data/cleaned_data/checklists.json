@@ -1,10 +1,24 @@
 [
   {
+    "locName": "Montrose Dunes",
+    "howMany": 2,
+    "nice_date": "May 23",
+    "nice_time": "06:11 AM",
+    "checklist": "ebird.org/checklist/S241474506"
+  },
+  {
     "locName": "Montrose Point Bird Sanctuary",
+    "howMany": 2,
+    "nice_date": "May 23",
+    "nice_time": "05:10 AM",
+    "checklist": "ebird.org/checklist/S241475122"
+  },
+  {
+    "locName": "Lincoln Park//loop",
     "howMany": 1,
     "nice_date": "May 22",
-    "nice_time": "05:51 AM",
-    "checklist": "ebird.org/checklist/S241161451"
+    "nice_time": "11:16 AM",
+    "checklist": "ebird.org/checklist/S241323102"
   },
   {
     "locName": "Montrose Beach",
@@ -12,13 +26,6 @@
     "nice_date": "May 21",
     "nice_time": "09:46 AM",
     "checklist": "ebird.org/checklist/S241039089"
-  },
-  {
-    "locName": "Montrose Dunes",
-    "howMany": 2,
-    "nice_date": "May 21",
-    "nice_time": "05:50 AM",
-    "checklist": "ebird.org/checklist/S240874425"
   },
   {
     "locName": "Montrose Bird Sanctuary",
@@ -33,12 +40,5 @@
     "nice_date": "May 16",
     "nice_time": "09:30 AM",
     "checklist": "ebird.org/checklist/S238857554"
-  },
-  {
-    "locName": "Lake Michigan US-IL ",
-    "howMany": 1,
-    "nice_date": "May 14",
-    "nice_time": "09:12 AM",
-    "checklist": "ebird.org/checklist/S238099096"
   }
 ]
