@@ -73,4 +73,19 @@ rbind(cook_plovers, nh_plovers) %>%
   geom_line()
 
 # ratio is only a valid metric since these are only plovers in respective states
-# max in this case is an estimate for total number in each location  
+# max in this case is an estimate for total number in each location
+
+# frequency plot for bio ----
+frequency_plot <- local_data %>%
+  filter(common_name == "Piping Plover") %>%
+  mutate(month = month(observation_date), week = week(observation_date)) %>%
+  summarize(count = n_distinct(sampling_event_identifier), .by = c(week, month)) %>%
+  mutate(count = count / max(count)) %>%
+  ggplot(aes(x = week, y = count)) +
+  geom_col(fill = "lightblue") +
+  geom_col(aes(y = -count), fill = "lightblue") +
+  theme_void() +
+  coord_fixed(ratio = 5)
+
+# write out plot framework (not image)
+save(frequency_plot, file = "docs/graphics/plot_framework.rda")

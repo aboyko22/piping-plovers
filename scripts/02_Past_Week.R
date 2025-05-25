@@ -20,3 +20,11 @@ recent_citings <- ebirdregion(loc = "US-IL-031", species = "pipplo", back = 30) 
   select(locName, howMany, nice_date, nice_time, checklist)
 
 write_json(recent_citings, "data/cleaned_data/checklists.json", pretty = TRUE, auto_unbox = TRUE)
+
+# updated relative frequency chart ----
+load("docs/graphics/plot_framework.rda")
+
+frequency_plot <- frequency_plot +
+  geom_vline(color = "red", xintercept = week(Sys.Date()))
+
+ggsave(filename = "frequency_plot.jpg", plot = frequency_plot, path = "docs/graphics/")
