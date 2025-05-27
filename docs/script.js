@@ -48,7 +48,7 @@
 //     .attr("fill", (d, i) => i === data.length - 6 ? "#F54E8B" : "#B5B5B5");
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("graphics/checklists.json")
+  fetch(`media/checklists.json?cb=${new Date().getTime()}`)
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById("checklists-container");

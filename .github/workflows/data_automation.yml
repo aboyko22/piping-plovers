@@ -33,7 +33,7 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add data/cleaned_data/checklists.json
+          git add docs/media/checklists.json
           git add docs/graphics/frequency_plot.jpg
           git commit -m 'Data updated' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
