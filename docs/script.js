@@ -74,11 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
       container.appendChild(div);
     });
   });
-});
-
-// Following code is from snipzy.dev, really helpful resource
-// Add this JavaScript to make the accordion functional
-document.addEventListener('DOMContentLoaded', function() {
+    // Following code is from snipzy.dev, really helpful resource
+    // Add this JavaScript to make the accordion functional
     const accordionHeaders = document.querySelectorAll('.accordion-header');
     
     accordionHeaders.forEach(header => {
@@ -97,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     });
-  });
+});
 
 const audio = document.getElementById('audio-player');
 const button = document.getElementById('audio-toggle');
