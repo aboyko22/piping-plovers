@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://d3js.org; style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' https://www.allaboutbirds.org; frame-src https://macaulaylibrary.org https://uploads.knightlab.com https://flo.uri.sh;">
- <link rel = "stylesheet" href = "styles.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
- <link rel="icon" type="image/x-icon" href="graphics/pxArt.png">
- <script src="https://d3js.org/d3.v7.min.js"></script>
-  <title>Piping Plovers in Chicago</title>
+  <link rel = "stylesheet" href = "styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="graphics/pxArt.png">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <title>Chicago Piping Plovers</title>
 </head>
 <body>
   <header>
-    <h1>Piping Plovers in Chicago</h1>
+    <h1>Chicago Piping Plovers</h1>
     <nav>
       <a class = "text-hover-effect-1" href="">Home</a>
       <a class = "text-hover-effect-1" href="methodology/">Methodology</a>
@@ -40,10 +40,17 @@
                 <div class = "big-accordian-container">
                     <p>Piping plovers are a small, pale-colored shorebird. Adults in their breeding plumage are recognizable by a thin black collar and stripe across their forehead, with an orange and black bill. They are around six to seven inches in length and weigh between 1.5 and 2.2 ounces.</p>
                     <p>In 1986, the U.S. Fish and Widlife Service designated the population of plovers in the Great Lakes region as endangered.</p>
+                    <p><i>All media is from <a href="https://www.allaboutbirds.org/guide/Piping_Plover/id">All About Birds</a></i></p>
                 </div>
                 <div class = "small-accordian-container">
                     <img src = https://www.allaboutbirds.org/guide/assets/photo/301219051-1280px.jpg height = "200px"><br>
-                    <!-- <a href="https://macaulaylibrary.org/photo/232925851?__hstc=75100365.86faff9a1e691952955bd0a9d2de14c2.1746685624559.1747851468184.1748298543433.9&__hssc=75100365.2.1748298543433&__hsfp=3347877758"><span>© Forest Botial-Jarvis / Macaulay Library</span></a> -->
+                    <div class="audio-button-wrapper">
+                      <button id="audio-toggle" class="audio-button" aria-label="Toggle audio">
+                        <i class="fas fa-play"></i>
+                        <span class="audio-text">Click to Listen</span>
+                      </button>
+                      <audio id="audio-player" src="graphics/plover_audio.mp3"></audio>
+                    </div>
                 </div>
               </div>
             </div>
@@ -53,7 +60,10 @@
                 <i class="fas fa-chevron-down"></i>
               </div>
               <div class="accordion-content">
-                <div class="big-accordian-container"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim diam ac enim finibus, ut luctus est porttitor. Etiam ultrices turpis tellus.</p></div>
+                <div class="big-accordian-container">
+                  <p>Piping plovers are most frequently found within a few feet from the water's edge, where they feed. Watch out, as their coloration makes for great camouflage, and they are often heard before they are seen.</p>
+                  <p>They can only be found in the Chicago area around breeding season, so keep an eye out for them between April and September.</p>
+                </div>
                 <div class="small-accordian-container"><img src="graphics/frequency_plot.jpg" height = "200px" width = 100%></div>
               </div>
             </div>
@@ -114,9 +124,20 @@
           <p>Vestibulum at pellentesque odio. Nulla a ullamcorper metus. Curabitur id molestie lacus. Nullam sed sem nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin sit amet turpis eu risus mattis consectetur non quis ex.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-          <div class="bar-chart">
+          <div class="flourish-wrapper">
+            <iframe src='https://flo.uri.sh/story/3131006/embed'
+              title='Interactive or visual content'
+              class='flourish-embed-iframe'
+              frameborder='0'
+              scrolling='no'
+              style='width:100%;height:600px;'
+              sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
+            </iframe>
+          </div>
+          
+          <!-- <div class="bar-chart">
             <svg id="chart" width="500" height="300"></svg>
-        </div>
+        </div> -->
 
         <p>Sed auctor nec nisl ut elementum. Morbi ut fermentum nunc. Cras blandit pretium congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet tellus aliquam, venenatis diam ac, venenatis tortor.</p>
         <p>Integer dignissim leo neque, vitae consectetur ex egestas eu. Curabitur semper blandit nibh, vitae varius ex convallis ut. Nulla aliquet elit arcu, non vestibulum nulla egestas non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed accumsan leo eu ultricies pharetra. Integer ultricies mattis lorem sed molestie.</p>

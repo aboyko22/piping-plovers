@@ -5,6 +5,14 @@
     --text-color: #333;
     --subtext-color: #666;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    overflow-x: hidden;
+}
     
 body {
     margin: 0;
@@ -13,6 +21,7 @@ body {
     background-color: #FDFDFB;
     color: #2E2E2E;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 header {
@@ -23,9 +32,10 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
     header h1 {
@@ -52,10 +62,10 @@ main {
     }
 
 footer {
-    background-color: #E9E5DD; /* Drift Sand */
+    background-color: #E9E5DD;
     padding: 1rem 2rem;
     text-align: center;
-    color: #6D6D6D; /* Iron Gray */
+    color: #6D6D6D;
 }
 
 a {
@@ -93,7 +103,7 @@ blockquote {
     text-align: center;
     width: 48%;
     box-sizing: border-box;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
     .image-container iframe {
@@ -110,27 +120,30 @@ blockquote {
     }
 
 .story-map {
-    background-color: #FFFFFF;
-    border: 1px solid #D3D3D3;
     width: 90%;
     max-width: 1000px;
     margin: 2rem auto;
-    padding: 1rem;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #D3D3D3;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
+  }
+  
+  .story-map-wrapper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 
-    .story-map iframe {
-        width: 100%;
-        height: 800px; /* original size */
-        border: none;
-        display: block;
-    }
-
-.story-map-wrapper {
-    transform: scale(0.75);
-    transform-origin: top left;
-    width: 133.33%; /* 100 / 0.75 = 133.33 */
-    height: 600px; /* 800px * 0.75 = 600 px */
+.story-map iframe {
+    width: 100%;
+    height: 600 px;
+    aspect-ratio: 4 / 4;
+    border: none;
+    display: block;
 }
 
 .flourish-wrapper {
@@ -139,7 +152,6 @@ blockquote {
     width: 100%;
     max-width: 1000px;
     box-sizing: border-box;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
       
     .flourish-wrapper iframe {
@@ -150,11 +162,10 @@ blockquote {
         border: none;
     }
 
-.bar-chart {
+/* .bar-chart {
     margin: 2rem 0;
     text-align: center;
-}
-
+} */
 
 #checklists-container {
     display: grid;
@@ -256,7 +267,7 @@ blockquote {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
-    padding: 0 20px;
+    padding: 10 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -274,7 +285,7 @@ blockquote {
   
   .accordion-item.active .accordion-content {
     max-height: 800px; /* need to change */
-    padding: 0 20px 15px;
+    padding: 5px;
   }
 
 /* Also adapted from snipzy.dev */
@@ -311,6 +322,7 @@ blockquote {
     height: 100%;
     width: 60%;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .small-accordian-container {
@@ -319,4 +331,103 @@ blockquote {
     height: auto;
     object-fit: contain;
     margin: 0 auto;
+}
+
+.audio-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+    
+.audio-button {
+    background-color: #1f2937;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+  
+.audio-button:hover {
+    background-color: #111827;
+}
+
+/* For Mobile Use */
+@media (max-width: 768px) {
+    main, .big-accordian-container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 1rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .image-grid {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+        position: relative;
+    }
+
+    .image-container iframe {
+        height: 355px !important;
+        min-height: unset !important;
+        overflow-anchor: auto;
+    }
+
+    .story-map-wrapper {
+        transform: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .story-map {
+        width: 100%;
+        max-width: 1000px;
+        margin: 1rem auto;
+      }
+    
+      .story-map iframe {
+        width: 100%;
+        min-width: 320px;
+        height: 600px;
+      }
+      
+    .flourish-wrapper iframe {
+        height: 400px !important;
+    }
+
+    .accordion-content {
+        flex-direction: column;
+    }
 }
