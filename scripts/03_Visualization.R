@@ -88,4 +88,4 @@ frequency_plot <- local_data %>%
   coord_fixed(ratio = 5)
 
 # write out plot framework (not image)
-save(frequency_plot, file = "docs/graphics/plot_framework.rda")
+save(frequency_plot, file = "docs/media/plot_framework.rda")
