@@ -88,10 +88,14 @@ frequency_plot <- local_data %>%
       limits = c(1, 53),
       breaks = c(2, 6, 10, 14, 19, 23, 27, 32, 36, 41, 45, 49),
       labels = month.abb) +
+  labs(title = "Relative Frequency by Week",
+       caption = "\nSource: eBird Basic Dataset • Graphic by Alex Boyko") +
   theme_minimal() +
   theme(axis.title = element_blank(),
         axis.text.y = element_blank(),
-        panel.grid = element_blank()) +
+        panel.grid = element_blank(),
+        plot.title = element_text(hjust = 0.5, face = "bold", size = 18),
+        plot.caption = element_text(hjust = 0)) +
   coord_fixed(ratio = 5)
 
 # write out plot framework (not image)

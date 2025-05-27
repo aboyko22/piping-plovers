@@ -27,4 +27,4 @@ load("docs/media/plot_framework.rda")
 frequency_plot <- frequency_plot +
   geom_vline(color = "red", xintercept = week(Sys.Date()))
 
-ggsave(filename = "frequency_plot.jpg", plot = frequency_plot, path = "docs/media/")
+ggsave(filename = "frequency_plot.jpg", plot = frequency_plot, path = "docs/media/", width = 6, height = 2)
