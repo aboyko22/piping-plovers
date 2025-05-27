@@ -84,7 +84,14 @@ frequency_plot <- local_data %>%
   ggplot(aes(x = week, y = count)) +
   geom_col(fill = "lightblue") +
   geom_col(aes(y = -count), fill = "lightblue") +
-  theme_void() +
+    scale_x_continuous(
+      limits = c(1, 53),
+      breaks = c(2, 6, 10, 14, 19, 23, 27, 32, 36, 41, 45, 49),
+      labels = month.abb) +
+  theme_minimal() +
+  theme(axis.title = element_blank(),
+        axis.text.y = element_blank(),
+        panel.grid = element_blank()) +
   coord_fixed(ratio = 5)
 
 # write out plot framework (not image)
