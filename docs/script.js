@@ -48,7 +48,7 @@ g.selectAll("rect")
     .attr("fill", (d, i) => i === data.length - 6 ? "#F54E8B" : "#B5B5B5");
 
 document.addEventListener("DOMContentLoaded", () => {
-fetch("../data/cleaned_data/checklists.json")
+fetch("graphics/checklists.json")
 .then(response => response.json())
 .then(data => {
   const container = document.getElementById("checklists-container");
