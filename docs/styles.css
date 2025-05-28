@@ -257,6 +257,7 @@ blockquote {
         margin: 0;
         font-size: 16px;
         font-weight: 500;
+        color: #2E2E2E;
     }
   
     .accordion-header i {
@@ -320,14 +321,14 @@ blockquote {
     background-color: #FFFFFF;
     padding: 1rem;
     height: 100%;
-    width: 60%;
+    width: 55%;
     box-sizing: border-box;
     margin: 0 auto;
 }
 
 .small-accordian-container {
     display: block;
-    max-width: 100%;
+    width: 35%;
     height: auto;
     object-fit: contain;
     margin: 0 auto;
@@ -359,6 +360,60 @@ blockquote {
 .audio-button:hover {
     background-color: #111827;
 }
+
+.chat-thread {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  .chat-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+  
+  .chat-row.left {
+    flex-direction: row;
+  }
+  
+  .chat-row.right {
+    flex-direction: row-reverse;
+  }
+  
+  .chat {
+    max-width: 60%;
+    padding: 1em;
+    border-radius: 10px;
+    background: #f5f5f5;
+    position: relative;
+  }
+  
+  .chat-row.right .chat {
+    background: #e0f7fa;
+  }
+  
+  .avatar {
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 50%;
+    background: #ccc;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    flex-shrink: 0;
+  }
+
+  .chat-row.left .avatar {
+    background: #d0d0d0;
+  }
+  
+  .chat-row.right .avatar {
+    background: #a3e7f0;
+  }
 
 /* For Mobile Use */
 @media (max-width: 768px) {
@@ -430,4 +485,4 @@ blockquote {
     .accordion-content {
         flex-direction: column;
     }
-}
+}  
