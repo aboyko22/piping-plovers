@@ -415,6 +415,11 @@ blockquote {
     background: #a3e7f0;
   }
 
+  .index {
+    display: flex;
+    justify-content: center;
+  }
+
 /* For Mobile Use */
 @media (max-width: 768px) {
     main, .big-accordian-container {
