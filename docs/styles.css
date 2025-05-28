@@ -89,13 +89,18 @@ blockquote {
     line-height: 1.5em;
 }
 
+.caption {
+    font-style: italic;
+    font-size: 14px;
+}
+
 .image-grid {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: .5rem;
 }
-
+      
 .image-container {
     background-color: #FFFFFF;
     border: 1px solid #D3D3D3;
@@ -105,19 +110,21 @@ blockquote {
     box-sizing: border-box;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
-    .image-container iframe {
-      width: 100%;
-      min-height: 410px;
-      border: none;
-    }
-
-    .image-container p {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #2b2b2b;
-      text-align: left;
-    }
+      
+.iframe-wrapper {
+    width: 100%;
+    height: 325px;
+    position: relative;
+}
+      
+.iframe-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    top: 0;
+    left: 0;
+}
 
 .story-map {
     width: 90%;
@@ -161,11 +168,6 @@ blockquote {
         display: block;
         border: none;
     }
-
-/* .bar-chart {
-    margin: 2rem 0;
-    text-align: center;
-} */
 
 #checklists-container {
     display: grid;
@@ -332,6 +334,7 @@ blockquote {
     height: auto;
     object-fit: contain;
     margin: 0 auto;
+    text-align: center;
 }
 
 .audio-button-wrapper {
