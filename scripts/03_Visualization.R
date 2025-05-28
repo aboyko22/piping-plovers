@@ -18,8 +18,10 @@ nh_data <- read_csv("data/cleaned_data/nh_data.csv")
 # top 150 data for scatter plot ----
 comment_frequencies <- local_data %>%
   filter(!str_detect(common_name, "sp.")) %>%
-  mutate(has_comment = if_else(!is.na(species_comments), 1, 0)) %>%
-  summarize(percent = mean(has_comment) * 100, count = n(), .by = common_name) %>%
+  mutate(has_comment = if_else(!is.na(species_comments), 1, 0),
+         has_exclam = if_else(str_detect(species_comments, "!"), 1, 0)) %>%
+  summarize(comment_percent = mean(has_comment) * 100, exclamation_percent = mean(has_exclam, na.rm = TRUE) * 100,
+            count = n(), .by = common_name) %>%
   slice_max(n = 150, order_by = count) %>%
   left_join(scraped_images, by = join_by(common_name == `Common Name`)) %>%
   rename(url = `Image URL`)
