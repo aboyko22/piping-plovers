@@ -1,9 +1,10 @@
-
 :root {
     --accent: #5c8a8a;
     --hover-bg: #e0f7fa;
     --text-color: #333;
     --subtext-color: #666;
+    --primary-gray: #ccc;
+    --secondary-gray: #f5f5f5;
 }
 
 html, body {
@@ -15,13 +16,9 @@ html, body {
 }
     
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #FDFDFB;
     color: #2E2E2E;
-    overflow-x: hidden;
-    box-sizing: border-box;
 }
 
 header {
@@ -74,7 +71,7 @@ a {
 }
 
 blockquote {
-    border-left: 10px solid #ccc;
+    border-left: 10px solid var(--primary-gray);
     margin: 1.5em 10px;
     padding: 0.5em 10px;
     font-style: italic;
@@ -127,7 +124,7 @@ blockquote {
 }
 
 .story-map {
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: 2rem auto;
     padding: 0;
@@ -147,8 +144,7 @@ blockquote {
 
 .story-map iframe {
     width: 100%;
-    height: 600 px;
-    aspect-ratio: 4 / 4;
+    height: 700px;
     border: none;
     display: block;
 }
@@ -178,7 +174,7 @@ blockquote {
 
 .checklist-entry {
     background-color: #FFFFFF;
-    border: 1px solid #ccc;
+    border: 1px solid var(--primary-gray);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s ease, background-color 0.3s ease;
@@ -189,7 +185,6 @@ blockquote {
 }
 
     .checklist-entry:hover {
-    background: #f0f8ff;
     transform: translateY(-5px);
     background-color: var(--hover-bg);
     }
@@ -197,7 +192,6 @@ blockquote {
 
     .checklist-entry a {
     text-decoration: none;
-    color: #333;
     }
 
     .checklist-entry h2 {
@@ -234,7 +228,6 @@ blockquote {
   
 .accordion-item {
     background-color: #fff;
-    color: #333;
     border-bottom: 1px solid #eee;
 }
   
@@ -259,7 +252,6 @@ blockquote {
         margin: 0;
         font-size: 16px;
         font-weight: 500;
-        color: #2E2E2E;
     }
   
     .accordion-header i {
@@ -279,7 +271,7 @@ blockquote {
 }
   
   .accordion-item.active .accordion-header {
-    background-color: #f5f5f5;
+    background-color: var(--secondary-gray);
   }
   
   .accordion-item.active .accordion-header i {
@@ -288,7 +280,7 @@ blockquote {
   
   .accordion-item.active .accordion-content {
     max-height: 800px; /* need to change */
-    padding: 5px;
+    padding: 10px;
   }
 
 /* Also adapted from snipzy.dev */
@@ -324,6 +316,7 @@ blockquote {
     padding: 1rem;
     height: 100%;
     width: 55%;
+    max-width: 475px;
     box-sizing: border-box;
     margin: 0 auto;
 }
@@ -331,17 +324,24 @@ blockquote {
 .small-accordian-container {
     display: block;
     width: 35%;
+    max-width: 475px;
     height: auto;
     object-fit: contain;
     margin: 0 auto;
-    text-align: center;
 }
+
+.accordion-item:first-of-type .caption {
+    /* line-height: 0.5em; */
+    margin-top: 0;
+    text-align: center;
+  }
 
 .audio-button-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 1rem 0;
+    margin-bottom: .5rem;
 }
     
 .audio-button {
@@ -388,7 +388,7 @@ blockquote {
     max-width: 60%;
     padding: 1em;
     border-radius: 10px;
-    background: #f5f5f5;
+    background: var(--secondary-gray);
     position: relative;
   }
   
@@ -400,7 +400,7 @@ blockquote {
     width: 2.2em;
     height: 2.2em;
     border-radius: 50%;
-    background: #ccc;
+    background: var(--primary-gray);
     color: #fff;
     display: flex;
     align-items: center;
@@ -425,7 +425,7 @@ blockquote {
 
 /* For Mobile Use */
 @media (max-width: 768px) {
-    main, .big-accordian-container {
+    main {
         width: 95%;
         padding: 1rem;
     }
@@ -468,6 +468,18 @@ blockquote {
         overflow-anchor: auto;
     }
 
+    .accordion-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .big-accordian-container,
+    .small-accordian-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+    
     .story-map-wrapper {
         transform: none;
         width: 100%;
@@ -487,10 +499,6 @@ blockquote {
       }
       
     .flourish-wrapper iframe {
-        height: 400px !important;
-    }
-
-    .accordion-content {
-        flex-direction: column;
+        height: 500px;
     }
 }  
