@@ -19,7 +19,7 @@ recent_citings <- ebirdregion(loc = "US-IL-031", species = "pipplo", back = 30) 
   
   select(locName, howMany, nice_date, nice_time, checklist)
 
-write_json(recent_citings, "data/cleaned_data/checklists.json", pretty = TRUE, auto_unbox = TRUE)
+write_json(recent_citings, "docs/media/checklists.json", pretty = TRUE, auto_unbox = TRUE)
 
 # updated relative frequency chart ----
 load("docs/media/plot_framework.rda")
