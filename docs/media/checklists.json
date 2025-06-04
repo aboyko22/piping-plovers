@@ -1,24 +1,31 @@
 [
   {
-    "locName": "Montrose Dunes",
-    "howMany": 1,
-    "nice_date": "June 2",
-    "nice_time": "07:17 PM",
-    "checklist": "ebird.org/checklist/S246153525"
-  },
-  {
     "locName": "Montrose Point Bird Sanctuary",
     "howMany": 1,
-    "nice_date": "June 2",
-    "nice_time": "05:35 PM",
-    "checklist": "ebird.org/checklist/S246108600"
+    "nice_date": "June 3",
+    "nice_time": "07:42 PM",
+    "checklist": "ebird.org/checklist/S246477533"
+  },
+  {
+    "locName": "Montrose Dunes",
+    "howMany": 3,
+    "nice_date": "June 3",
+    "nice_time": "06:00 AM",
+    "checklist": "ebird.org/checklist/S246371385"
   },
   {
     "locName": "Montrose Beach",
     "howMany": 2,
     "nice_date": "June 1",
-    "nice_time": "03:04 PM",
-    "checklist": "ebird.org/checklist/S245727455"
+    "nice_time": "08:04 PM",
+    "checklist": "ebird.org/checklist/S246321794"
+  },
+  {
+    "locName": "Montrose harbor",
+    "howMany": 2,
+    "nice_date": "June 1",
+    "nice_time": "12:00 PM",
+    "checklist": "ebird.org/checklist/S246425748"
   },
   {
     "locName": "Montrose Beach",
@@ -33,12 +40,5 @@
     "nice_date": "May 31",
     "nice_time": "04:39 PM",
     "checklist": "ebird.org/checklist/S245699010"
-  },
-  {
-    "locName": "North Simonds Drive",
-    "howMany": 1,
-    "nice_date": "May 30",
-    "nice_time": "04:32 PM",
-    "checklist": "ebird.org/checklist/S244751036"
   }
 ]
