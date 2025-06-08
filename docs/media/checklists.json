@@ -1,17 +1,31 @@
 [
   {
+    "locName": "Montrose Bird Sanctuary",
+    "howMany": 1,
+    "nice_date": "June 7",
+    "nice_time": "02:47 PM",
+    "checklist": "ebird.org/checklist/S247851498"
+  },
+  {
     "locName": "Montrose Point Bird Sanctuary",
     "howMany": 2,
-    "nice_date": "June 6",
-    "nice_time": "06:55 PM",
-    "checklist": "ebird.org/checklist/S247494574"
+    "nice_date": "June 7",
+    "nice_time": "02:28 PM",
+    "checklist": "ebird.org/checklist/S247849562"
   },
   {
     "locName": "Montrose Dunes",
-    "howMany": 3,
-    "nice_date": "June 6",
-    "nice_time": "08:05 AM",
-    "checklist": "ebird.org/checklist/S247326283"
+    "howMany": 1,
+    "nice_date": "June 7",
+    "nice_time": "08:30 AM",
+    "checklist": "ebird.org/checklist/S247705246"
+  },
+  {
+    "locName": "Montrose Beach",
+    "howMany": 2,
+    "nice_date": "June 7",
+    "nice_time": "08:20 AM",
+    "checklist": "ebird.org/checklist/S247726889"
   },
   {
     "locName": "Magic Hedge Bird Sanctuary",
@@ -26,19 +40,5 @@
     "nice_date": "June 5",
     "nice_time": "11:25 AM",
     "checklist": "ebird.org/checklist/S247331091"
-  },
-  {
-    "locName": "Montrose Beach",
-    "howMany": 2,
-    "nice_date": "June 1",
-    "nice_time": "03:04 PM",
-    "checklist": "ebird.org/checklist/S245727455"
-  },
-  {
-    "locName": "Montrose harbor",
-    "howMany": 2,
-    "nice_date": "June 1",
-    "nice_time": "12:00 PM",
-    "checklist": "ebird.org/checklist/S246425748"
   }
 ]
