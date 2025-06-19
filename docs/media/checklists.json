@@ -1,10 +1,17 @@
 [
   {
     "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 1,
-    "nice_date": "June 17",
-    "nice_time": "04:04 PM",
-    "checklist": "ebird.org/checklist/S251494785"
+    "howMany": 2,
+    "nice_date": "June 18",
+    "nice_time": "05:05 PM",
+    "checklist": "ebird.org/checklist/S251933687"
+  },
+  {
+    "locName": "Lincoln Park//loop",
+    "howMany": 2,
+    "nice_date": "June 18",
+    "nice_time": "10:37 AM",
+    "checklist": "ebird.org/checklist/S251787295"
   },
   {
     "locName": "Montrose Beach",
@@ -33,12 +40,5 @@
     "nice_date": "June 15",
     "nice_time": "06:09 PM",
     "checklist": "ebird.org/checklist/S250877680"
-  },
-  {
-    "locName": "Lincoln Park//loop",
-    "howMany": 2,
-    "nice_date": "June 14",
-    "nice_time": "10:14 AM",
-    "checklist": "ebird.org/checklist/S251207861"
   }
 ]
