@@ -1,17 +1,24 @@
 [
   {
-    "locName": "Montrose Dunes",
-    "howMany": 2,
-    "nice_date": "July 2",
-    "nice_time": "08:31 PM",
-    "checklist": "ebird.org/checklist/S256368395"
+    "locName": "Montrose Point Bird Sanctuary",
+    "howMany": 5,
+    "nice_date": "July 3",
+    "nice_time": "09:01 PM",
+    "checklist": "ebird.org/checklist/S256655872"
   },
   {
-    "locName": "Montrose Point Bird Sanctuary",
+    "locName": "Montrose Dunes",
+    "howMany": 4,
+    "nice_date": "July 3",
+    "nice_time": "02:51 PM",
+    "checklist": "ebird.org/checklist/S256582868"
+  },
+  {
+    "locName": "Montrose Beach",
     "howMany": 1,
-    "nice_date": "July 2",
-    "nice_time": "08:05 PM",
-    "checklist": "ebird.org/checklist/S256358844"
+    "nice_date": "July 3",
+    "nice_time": "07:10 AM",
+    "checklist": "ebird.org/checklist/S256495347"
   },
   {
     "locName": "Slip Road by Illinois Michigan Oil company Lemont",
@@ -33,12 +40,5 @@
     "nice_date": "June 29",
     "nice_time": "08:44 AM",
     "checklist": "ebird.org/checklist/S255226160"
-  },
-  {
-    "locName": "Montrose Sanctuary",
-    "howMany": 4,
-    "nice_date": "June 29",
-    "nice_time": "07:40 AM",
-    "checklist": "ebird.org/checklist/S255237564"
   }
 ]
