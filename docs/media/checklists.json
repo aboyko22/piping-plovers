@@ -1,24 +1,31 @@
 [
   {
+    "locName": "Montrose Dunes",
+    "howMany": 4,
+    "nice_date": "July 5",
+    "nice_time": "05:00 PM",
+    "checklist": "ebird.org/checklist/S257283630"
+  },
+  {
+    "locName": "Montrose Point Bird Sanctuary",
+    "howMany": 4,
+    "nice_date": "July 5",
+    "nice_time": "04:39 PM",
+    "checklist": "ebird.org/checklist/S257294107"
+  },
+  {
+    "locName": "Montrose Beach",
+    "howMany": 3,
+    "nice_date": "July 5",
+    "nice_time": "10:51 AM",
+    "checklist": "ebird.org/checklist/S257171747"
+  },
+  {
     "locName": "Unnamed Road",
     "howMany": 4,
     "nice_date": "July 4",
     "nice_time": "04:38 PM",
     "checklist": "ebird.org/checklist/S256972165"
-  },
-  {
-    "locName": "Montrose Dunes",
-    "howMany": 4,
-    "nice_date": "July 4",
-    "nice_time": "04:37 PM",
-    "checklist": "ebird.org/checklist/S256941549"
-  },
-  {
-    "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 4,
-    "nice_date": "July 4",
-    "nice_time": "09:30 AM",
-    "checklist": "ebird.org/checklist/S256814135"
   },
   {
     "locName": "Montrose Beach",
@@ -33,12 +40,5 @@
     "nice_date": "July 1",
     "nice_time": "09:10 AM",
     "checklist": "ebird.org/checklist/S256082424"
-  },
-  {
-    "locName": "Lincoln Park US-IL ",
-    "howMany": 5,
-    "nice_date": "June 29",
-    "nice_time": "06:21 PM",
-    "checklist": "ebird.org/checklist/S255430957"
   }
 ]
