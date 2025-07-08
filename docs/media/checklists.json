@@ -1,10 +1,17 @@
 [
   {
     "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 5,
-    "nice_date": "July 6",
-    "nice_time": "04:45 PM",
-    "checklist": "ebird.org/checklist/S257698473"
+    "howMany": 3,
+    "nice_date": "July 7",
+    "nice_time": "06:46 PM",
+    "checklist": "ebird.org/checklist/S257974411"
+  },
+  {
+    "locName": "Lincoln Park",
+    "howMany": 4,
+    "nice_date": "July 7",
+    "nice_time": "10:45 AM",
+    "checklist": "ebird.org/checklist/S257866559"
   },
   {
     "locName": "Montrose Dunes",
@@ -33,12 +40,5 @@
     "nice_date": "July 3",
     "nice_time": "07:10 AM",
     "checklist": "ebird.org/checklist/S256495347"
-  },
-  {
-    "locName": "Slip Road by Illinois Michigan Oil company Lemont",
-    "howMany": 1,
-    "nice_date": "July 1",
-    "nice_time": "09:10 AM",
-    "checklist": "ebird.org/checklist/S256082424"
   }
 ]
