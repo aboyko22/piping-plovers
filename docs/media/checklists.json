@@ -1,17 +1,31 @@
 [
   {
-    "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 2,
-    "nice_date": "July 12",
-    "nice_time": "07:15 PM",
-    "checklist": "ebird.org/checklist/S259387783"
-  },
-  {
     "locName": "Montrose Dunes",
     "howMany": 3,
-    "nice_date": "July 12",
-    "nice_time": "05:01 PM",
-    "checklist": "ebird.org/checklist/S259335612"
+    "nice_date": "July 13",
+    "nice_time": "06:26 PM",
+    "checklist": "ebird.org/checklist/S259695411"
+  },
+  {
+    "locName": "Montrose Point Bird Sanctuary",
+    "howMany": 3,
+    "nice_date": "July 13",
+    "nice_time": "11:23 AM",
+    "checklist": "ebird.org/checklist/S259599652"
+  },
+  {
+    "locName": "Montrose Bird Harbor",
+    "howMany": 2,
+    "nice_date": "July 13",
+    "nice_time": "10:13 AM",
+    "checklist": "ebird.org/checklist/S259584956"
+  },
+  {
+    "locName": "Auto selected 41.96676",
+    "howMany": 2,
+    "nice_date": "July 13",
+    "nice_time": "08:17 AM",
+    "checklist": "ebird.org/checklist/S259515724"
   },
   {
     "locName": "Montrose Beach",
@@ -26,19 +40,5 @@
     "nice_date": "July 8",
     "nice_time": "10:30 AM",
     "checklist": "ebird.org/checklist/S258133994"
-  },
-  {
-    "locName": "Lincoln Park",
-    "howMany": 4,
-    "nice_date": "July 7",
-    "nice_time": "10:45 AM",
-    "checklist": "ebird.org/checklist/S257866559"
-  },
-  {
-    "locName": "Montrose Beach",
-    "howMany": 3,
-    "nice_date": "July 5",
-    "nice_time": "10:51 AM",
-    "checklist": "ebird.org/checklist/S257171747"
   }
 ]
