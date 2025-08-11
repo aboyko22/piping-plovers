@@ -1,10 +1,17 @@
 [
   {
+    "locName": "Regents View",
+    "howMany": 1,
+    "nice_date": "August 10",
+    "nice_time": "07:07 PM",
+    "checklist": "ebird.org/checklist/S266475968"
+  },
+  {
     "locName": "Jackson Park",
-    "howMany": 2,
-    "nice_date": "August 9",
-    "nice_time": "07:00 PM",
-    "checklist": "ebird.org/checklist/S266203331"
+    "howMany": 1,
+    "nice_date": "August 10",
+    "nice_time": "06:45 PM",
+    "checklist": "ebird.org/checklist/S266482505"
   },
   {
     "locName": "Jackson Park",
@@ -33,12 +40,5 @@
     "nice_date": "August 2",
     "nice_time": "08:22 AM",
     "checklist": "ebird.org/checklist/S264607595"
-  },
-  {
-    "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 2,
-    "nice_date": "August 2",
-    "nice_time": "07:00 AM",
-    "checklist": "ebird.org/checklist/S264611066"
   }
 ]
