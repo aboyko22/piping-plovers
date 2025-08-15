@@ -2,9 +2,23 @@
   {
     "locName": "Jackson Park",
     "howMany": 1,
-    "nice_date": "August 13",
-    "nice_time": "09:28 AM",
-    "checklist": "ebird.org/checklist/S267005618"
+    "nice_date": "August 14",
+    "nice_time": "07:10 PM",
+    "checklist": "ebird.org/checklist/S267323069"
+  },
+  {
+    "locName": "Wolf Lake/Powers State Recreation Area",
+    "howMany": 1,
+    "nice_date": "August 14",
+    "nice_time": "06:31 PM",
+    "checklist": "ebird.org/checklist/S267281553"
+  },
+  {
+    "locName": "Montrose Point Bird Sanctuary",
+    "howMany": 1,
+    "nice_date": "August 14",
+    "nice_time": "09:06 AM",
+    "checklist": "ebird.org/checklist/S267190863"
   },
   {
     "locName": "Rainbow Beach",
@@ -12,13 +26,6 @@
     "nice_date": "August 12",
     "nice_time": "07:15 PM",
     "checklist": "ebird.org/checklist/S266897791"
-  },
-  {
-    "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 1,
-    "nice_date": "August 12",
-    "nice_time": "04:35 PM",
-    "checklist": "ebird.org/checklist/S266871978"
   },
   {
     "locName": "Regents View",
@@ -33,12 +40,5 @@
     "nice_date": "August 3",
     "nice_time": "06:50 PM",
     "checklist": "ebird.org/checklist/S264925612"
-  },
-  {
-    "locName": "Montrose Dunes",
-    "howMany": 1,
-    "nice_date": "August 2",
-    "nice_time": "12:08 PM",
-    "checklist": "ebird.org/checklist/S264522449"
   }
 ]
