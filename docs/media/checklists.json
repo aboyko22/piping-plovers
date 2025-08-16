@@ -2,9 +2,16 @@
   {
     "locName": "Jackson Park",
     "howMany": 1,
-    "nice_date": "August 14",
-    "nice_time": "07:10 PM",
-    "checklist": "ebird.org/checklist/S267323069"
+    "nice_date": "August 15",
+    "nice_time": "05:38 PM",
+    "checklist": "ebird.org/checklist/S267471925"
+  },
+  {
+    "locName": "Rainbow Beach",
+    "howMany": 1,
+    "nice_date": "August 15",
+    "nice_time": "05:44 AM",
+    "checklist": "ebird.org/checklist/S267362890"
   },
   {
     "locName": "Wolf Lake/Powers State Recreation Area",
@@ -19,13 +26,6 @@
     "nice_date": "August 14",
     "nice_time": "09:06 AM",
     "checklist": "ebird.org/checklist/S267190863"
-  },
-  {
-    "locName": "Rainbow Beach",
-    "howMany": 2,
-    "nice_date": "August 12",
-    "nice_time": "07:15 PM",
-    "checklist": "ebird.org/checklist/S266897791"
   },
   {
     "locName": "Regents View",
