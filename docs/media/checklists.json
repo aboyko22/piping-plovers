@@ -2,9 +2,16 @@
   {
     "locName": "Jackson Park",
     "howMany": 1,
-    "nice_date": "August 15",
-    "nice_time": "05:38 PM",
-    "checklist": "ebird.org/checklist/S267471925"
+    "nice_date": "August 17",
+    "nice_time": "05:50 AM",
+    "checklist": "ebird.org/checklist/S267797498"
+  },
+  {
+    "locName": "Unnamed Road",
+    "howMany": 1,
+    "nice_date": "August 16",
+    "nice_time": "12:53 PM",
+    "checklist": "ebird.org/checklist/S267650105"
   },
   {
     "locName": "Rainbow Beach",
@@ -33,12 +40,5 @@
     "nice_date": "August 10",
     "nice_time": "07:07 PM",
     "checklist": "ebird.org/checklist/S266475968"
-  },
-  {
-    "locName": "Jackson Park",
-    "howMany": 2,
-    "nice_date": "August 3",
-    "nice_time": "06:50 PM",
-    "checklist": "ebird.org/checklist/S264925612"
   }
 ]
