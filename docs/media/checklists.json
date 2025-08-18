@@ -1,10 +1,17 @@
 [
   {
     "locName": "Jackson Park",
-    "howMany": 1,
+    "howMany": 2,
     "nice_date": "August 17",
-    "nice_time": "05:50 AM",
-    "checklist": "ebird.org/checklist/S267797498"
+    "nice_time": "07:30 PM",
+    "checklist": "ebird.org/checklist/S267966352"
+  },
+  {
+    "locName": "Jackson Park",
+    "howMany": 2,
+    "nice_date": "August 17",
+    "nice_time": "06:02 PM",
+    "checklist": "ebird.org/checklist/S267980047"
   },
   {
     "locName": "Unnamed Road",
@@ -33,12 +40,5 @@
     "nice_date": "August 14",
     "nice_time": "09:06 AM",
     "checklist": "ebird.org/checklist/S267190863"
-  },
-  {
-    "locName": "Regents View",
-    "howMany": 1,
-    "nice_date": "August 10",
-    "nice_time": "07:07 PM",
-    "checklist": "ebird.org/checklist/S266475968"
   }
 ]
