@@ -2,9 +2,23 @@
   {
     "locName": "Jackson Park",
     "howMany": 1,
-    "nice_date": "August 18",
-    "nice_time": "05:31 PM",
-    "checklist": "ebird.org/checklist/S268153985"
+    "nice_date": "August 20",
+    "nice_time": "06:25 PM",
+    "checklist": "ebird.org/checklist/S268494223"
+  },
+  {
+    "locName": "Montrose Point Bird Sanctuary",
+    "howMany": 2,
+    "nice_date": "August 20",
+    "nice_time": "11:31 AM",
+    "checklist": "ebird.org/checklist/S268445512"
+  },
+  {
+    "locName": "Rainbow Beach",
+    "howMany": 1,
+    "nice_date": "August 19",
+    "nice_time": "06:14 AM",
+    "checklist": "ebird.org/checklist/S268479997"
   },
   {
     "locName": "60637",
@@ -26,19 +40,5 @@
     "nice_date": "August 16",
     "nice_time": "12:53 PM",
     "checklist": "ebird.org/checklist/S267650105"
-  },
-  {
-    "locName": "Rainbow Beach",
-    "howMany": 1,
-    "nice_date": "August 15",
-    "nice_time": "05:44 AM",
-    "checklist": "ebird.org/checklist/S267362890"
-  },
-  {
-    "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 1,
-    "nice_date": "August 14",
-    "nice_time": "09:06 AM",
-    "checklist": "ebird.org/checklist/S267190863"
   }
 ]
