@@ -1,5 +1,12 @@
 [
   {
+    "locName": "Rainbow Beach",
+    "howMany": 1,
+    "nice_date": "August 23",
+    "nice_time": "07:30 PM",
+    "checklist": "ebird.org/checklist/S269359801"
+  },
+  {
     "locName": "Jackson Park",
     "howMany": 1,
     "nice_date": "August 23",
@@ -12,13 +19,6 @@
     "nice_date": "August 21",
     "nice_time": "10:38 AM",
     "checklist": "ebird.org/checklist/S268616825"
-  },
-  {
-    "locName": "Rainbow Beach",
-    "howMany": 1,
-    "nice_date": "August 19",
-    "nice_time": "06:14 AM",
-    "checklist": "ebird.org/checklist/S268479997"
   },
   {
     "locName": "60637",
