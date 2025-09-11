@@ -1,5 +1,12 @@
 [
   {
+    "locName": "Montrose Point Bird Sanctuary",
+    "howMany": 4,
+    "nice_date": "September 7",
+    "nice_time": "04:30 PM",
+    "checklist": "ebird.org/checklist/S272671675"
+  },
+  {
     "locName": "Rainbow Beach",
     "howMany": 1,
     "nice_date": "August 23",
@@ -12,13 +19,6 @@
     "nice_date": "August 23",
     "nice_time": "05:12 PM",
     "checklist": "ebird.org/checklist/S269099143"
-  },
-  {
-    "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 1,
-    "nice_date": "August 21",
-    "nice_time": "10:38 AM",
-    "checklist": "ebird.org/checklist/S268616825"
   },
   {
     "locName": "60637",
