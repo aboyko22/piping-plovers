@@ -216,6 +216,28 @@ blockquote {
     margin-bottom: 8px;
     color: var(--accent);
     }
+    
+.resource-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.resource-links li {
+  margin-bottom: 6px;
+}
+
+.resource-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.resource-links a:hover {
+  color: var(--hover-accent);
+  text-decoration: underline;
+}
 
 /* Following code is from snipzy.dev, really helpful resource */
 /* Partially adapted to fit needs of this webpage */
