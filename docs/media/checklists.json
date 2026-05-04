@@ -1,17 +1,31 @@
 [
   {
+    "locName": "Montrose Bird Sanctuary",
+    "howMany": 1,
+    "nice_date": "May 3",
+    "nice_time": "06:00 PM",
+    "checklist": "ebird.org/checklist/S332201015"
+  },
+  {
     "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 2,
-    "nice_date": "May 2",
-    "nice_time": "04:28 PM",
-    "checklist": "ebird.org/checklist/S331399016"
+    "howMany": 4,
+    "nice_date": "May 3",
+    "nice_time": "04:57 PM",
+    "checklist": "ebird.org/checklist/S332163189"
+  },
+  {
+    "locName": "2296 West Nichols Road",
+    "howMany": 1,
+    "nice_date": "May 3",
+    "nice_time": "08:00 AM",
+    "checklist": "ebird.org/checklist/S332016087"
   },
   {
     "locName": "Montrose Dunes",
-    "howMany": 2,
-    "nice_date": "May 2",
-    "nice_time": "03:50 PM",
-    "checklist": "ebird.org/checklist/S331376229"
+    "howMany": 1,
+    "nice_date": "May 3",
+    "nice_time": "07:57 AM",
+    "checklist": "ebird.org/checklist/S331738778"
   },
   {
     "locName": "Montrose Beach",
@@ -26,19 +40,5 @@
     "nice_date": "May 2",
     "nice_time": "09:34 AM",
     "checklist": "ebird.org/checklist/S331153465"
-  },
-  {
-    "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 1,
-    "nice_date": "April 30",
-    "nice_time": "09:17 AM",
-    "checklist": "ebird.org/checklist/S329904552"
-  },
-  {
-    "locName": "Montrose Point Bird Santuary",
-    "howMany": 1,
-    "nice_date": "April 28",
-    "nice_time": "05:18 PM",
-    "checklist": "ebird.org/checklist/S329201984"
   }
 ]
