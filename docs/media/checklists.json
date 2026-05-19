@@ -1,24 +1,31 @@
 [
   {
+    "locName": "Montrose Point Bird Sanctuary",
+    "howMany": 1,
+    "nice_date": "May 18",
+    "nice_time": "06:32 PM",
+    "checklist": "ebird.org/checklist/S342061616"
+  },
+  {
+    "locName": "Rainbow Beach",
+    "howMany": 1,
+    "nice_date": "May 18",
+    "nice_time": "12:30 PM",
+    "checklist": "ebird.org/checklist/S341861131"
+  },
+  {
+    "locName": "Montrose Dunes",
+    "howMany": 2,
+    "nice_date": "May 18",
+    "nice_time": "06:05 AM",
+    "checklist": "ebird.org/checklist/S341649003"
+  },
+  {
     "locName": "Montrose Beach",
     "howMany": 1,
     "nice_date": "May 17",
     "nice_time": "07:37 PM",
     "checklist": "ebird.org/checklist/S341563937"
-  },
-  {
-    "locName": "Montrose Dunes",
-    "howMany": 2,
-    "nice_date": "May 17",
-    "nice_time": "06:15 PM",
-    "checklist": "ebird.org/checklist/S341437931"
-  },
-  {
-    "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 1,
-    "nice_date": "May 17",
-    "nice_time": "03:56 PM",
-    "checklist": "ebird.org/checklist/S341380905"
   },
   {
     "locName": "Jackson Park--63rd St. Beach",
@@ -33,12 +40,5 @@
     "nice_date": "May 17",
     "nice_time": "10:46 AM",
     "checklist": "ebird.org/checklist/S341213579"
-  },
-  {
-    "locName": "Rainbow Beach",
-    "howMany": 1,
-    "nice_date": "May 16",
-    "nice_time": "08:12 AM",
-    "checklist": "ebird.org/checklist/S340038606"
   }
 ]
