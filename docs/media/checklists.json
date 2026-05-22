@@ -1,17 +1,24 @@
 [
   {
+    "locName": "Jackson Park--63rd St. Beach",
+    "howMany": 1,
+    "nice_date": "May 21",
+    "nice_time": "05:25 PM",
+    "checklist": "ebird.org/checklist/S343687076"
+  },
+  {
     "locName": "Montrose Point Bird Sanctuary",
     "howMany": 1,
-    "nice_date": "May 20",
-    "nice_time": "05:10 PM",
-    "checklist": "ebird.org/checklist/S343147818"
+    "nice_date": "May 21",
+    "nice_time": "05:15 PM",
+    "checklist": "ebird.org/checklist/S343668624"
   },
   {
     "locName": "Montrose Dunes",
     "howMany": 2,
-    "nice_date": "May 20",
-    "nice_time": "12:28 PM",
-    "checklist": "ebird.org/checklist/S343149829"
+    "nice_date": "May 21",
+    "nice_time": "04:10 PM",
+    "checklist": "ebird.org/checklist/S343623235"
   },
   {
     "locName": "Montrose Point Bird Sanctuary",
@@ -33,12 +40,5 @@
     "nice_date": "May 18",
     "nice_time": "12:30 PM",
     "checklist": "ebird.org/checklist/S341861131"
-  },
-  {
-    "locName": "Montrose Beach",
-    "howMany": 1,
-    "nice_date": "May 17",
-    "nice_time": "07:37 PM",
-    "checklist": "ebird.org/checklist/S341563937"
   }
 ]
