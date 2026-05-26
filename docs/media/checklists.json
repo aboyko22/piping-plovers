@@ -1,17 +1,24 @@
 [
   {
-    "locName": "Montrose Dunes",
+    "locName": "Montrose Point Bird Sanctuary",
     "howMany": 1,
-    "nice_date": "May 24",
-    "nice_time": "07:08 PM",
-    "checklist": "ebird.org/checklist/S345923837"
+    "nice_date": "May 25",
+    "nice_time": "03:42 PM",
+    "checklist": "ebird.org/checklist/S346839967"
   },
   {
-    "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 2,
-    "nice_date": "May 24",
-    "nice_time": "04:21 PM",
-    "checklist": "ebird.org/checklist/S345955870"
+    "locName": "Montrose Dunes",
+    "howMany": 1,
+    "nice_date": "May 25",
+    "nice_time": "09:17 AM",
+    "checklist": "ebird.org/checklist/S346369230"
+  },
+  {
+    "locName": "Montrose Bird Sanctuary",
+    "howMany": 1,
+    "nice_date": "May 25",
+    "nice_time": "08:35 AM",
+    "checklist": "ebird.org/checklist/S346374065"
   },
   {
     "locName": "Montrose Beach",
@@ -19,13 +26,6 @@
     "nice_date": "May 24",
     "nice_time": "02:33 PM",
     "checklist": "ebird.org/checklist/S345892136"
-  },
-  {
-    "locName": "LaBagh Woods Forest Preserve",
-    "howMany": 5,
-    "nice_date": "May 24",
-    "nice_time": "09:15 AM",
-    "checklist": "ebird.org/checklist/S345460054"
   },
   {
     "locName": "Montrose Beach",
