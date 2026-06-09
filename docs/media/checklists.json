@@ -1,10 +1,24 @@
 [
   {
     "locName": "Montrose Point Bird Sanctuary",
+    "howMany": 3,
+    "nice_date": "June 8",
+    "nice_time": "02:18 PM",
+    "checklist": "ebird.org/checklist/S354718361"
+  },
+  {
+    "locName": "Montrose Dunes",
     "howMany": 1,
     "nice_date": "June 8",
-    "nice_time": "05:43 AM",
-    "checklist": "ebird.org/checklist/S354451756"
+    "nice_time": "11:20 AM",
+    "checklist": "ebird.org/checklist/S354589947"
+  },
+  {
+    "locName": "Montrose",
+    "howMany": 2,
+    "nice_date": "June 8",
+    "nice_time": "07:30 AM",
+    "checklist": "ebird.org/checklist/S354688560"
   },
   {
     "locName": "North Simonds Drive",
@@ -26,19 +40,5 @@
     "nice_date": "June 7",
     "nice_time": "03:42 PM",
     "checklist": "ebird.org/checklist/S354208428"
-  },
-  {
-    "locName": "Montrose Dunes",
-    "howMany": 2,
-    "nice_date": "June 7",
-    "nice_time": "02:24 PM",
-    "checklist": "ebird.org/checklist/S354211952"
-  },
-  {
-    "locName": "Montrose Bird Sanctuary",
-    "howMany": 1,
-    "nice_date": "June 7",
-    "nice_time": "07:47 AM",
-    "checklist": "ebird.org/checklist/S353907882"
   }
 ]
