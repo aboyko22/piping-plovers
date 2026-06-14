@@ -2,9 +2,16 @@
   {
     "locName": "Montrose Point Bird Sanctuary",
     "howMany": 1,
-    "nice_date": "June 12",
-    "nice_time": "08:44 AM",
-    "checklist": "ebird.org/checklist/S356225544"
+    "nice_date": "June 13",
+    "nice_time": "12:10 PM",
+    "checklist": "ebird.org/checklist/S356828638"
+  },
+  {
+    "locName": "Montrose Bird Sanctuary",
+    "howMany": 1,
+    "nice_date": "June 13",
+    "nice_time": "08:18 AM",
+    "checklist": "ebird.org/checklist/S356697302"
   },
   {
     "locName": "Montrose Beach",
@@ -33,12 +40,5 @@
     "nice_date": "June 8",
     "nice_time": "07:30 AM",
     "checklist": "ebird.org/checklist/S354688560"
-  },
-  {
-    "locName": "North Simonds Drive",
-    "howMany": 1,
-    "nice_date": "June 7",
-    "nice_time": "04:55 PM",
-    "checklist": "ebird.org/checklist/S354246465"
   }
 ]
