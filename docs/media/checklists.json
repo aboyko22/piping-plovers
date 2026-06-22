@@ -1,5 +1,33 @@
 [
   {
+    "locName": "Montrose Point Bird Sanctuary",
+    "howMany": 1,
+    "nice_date": "June 21",
+    "nice_time": "04:06 PM",
+    "checklist": "ebird.org/checklist/S361303372"
+  },
+  {
+    "locName": "Montrose Beach",
+    "howMany": 3,
+    "nice_date": "June 21",
+    "nice_time": "11:46 AM",
+    "checklist": "ebird.org/checklist/S361114228"
+  },
+  {
+    "locName": "sanctuary",
+    "howMany": 1,
+    "nice_date": "June 21",
+    "nice_time": "09:24 AM",
+    "checklist": "ebird.org/checklist/S361033588"
+  },
+  {
+    "locName": "Montrose Dunes",
+    "howMany": 5,
+    "nice_date": "June 21",
+    "nice_time": "08:00 AM",
+    "checklist": "ebird.org/checklist/S361273423"
+  },
+  {
     "locName": "7901 South Farragut Drive",
     "howMany": 1,
     "nice_date": "June 20",
@@ -12,33 +40,5 @@
     "nice_date": "June 20",
     "nice_time": "05:19 PM",
     "checklist": "ebird.org/checklist/S360513009"
-  },
-  {
-    "locName": "Montrose Dunes",
-    "howMany": 2,
-    "nice_date": "June 20",
-    "nice_time": "10:39 AM",
-    "checklist": "ebird.org/checklist/S360601800"
-  },
-  {
-    "locName": "Montrose Beach",
-    "howMany": 4,
-    "nice_date": "June 20",
-    "nice_time": "09:34 AM",
-    "checklist": "ebird.org/checklist/S360382719"
-  },
-  {
-    "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 1,
-    "nice_date": "June 18",
-    "nice_time": "09:05 AM",
-    "checklist": "ebird.org/checklist/S359168651"
-  },
-  {
-    "locName": "Montrose Point Bird Santuary",
-    "howMany": 1,
-    "nice_date": "June 16",
-    "nice_time": "07:04 PM",
-    "checklist": "ebird.org/checklist/S358519365"
   }
 ]
