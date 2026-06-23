@@ -2,16 +2,23 @@
   {
     "locName": "Montrose Point Bird Sanctuary",
     "howMany": 1,
-    "nice_date": "June 21",
-    "nice_time": "04:06 PM",
-    "checklist": "ebird.org/checklist/S361303372"
+    "nice_date": "June 22",
+    "nice_time": "04:26 PM",
+    "checklist": "ebird.org/checklist/S361849721"
   },
   {
     "locName": "Montrose Beach",
-    "howMany": 3,
+    "howMany": 2,
+    "nice_date": "June 22",
+    "nice_time": "11:25 AM",
+    "checklist": "ebird.org/checklist/S361718916"
+  },
+  {
+    "locName": "Montrose Dunes",
+    "howMany": 6,
     "nice_date": "June 21",
-    "nice_time": "11:46 AM",
-    "checklist": "ebird.org/checklist/S361114228"
+    "nice_time": "10:00 AM",
+    "checklist": "ebird.org/checklist/S361567647"
   },
   {
     "locName": "sanctuary",
@@ -19,13 +26,6 @@
     "nice_date": "June 21",
     "nice_time": "09:24 AM",
     "checklist": "ebird.org/checklist/S361033588"
-  },
-  {
-    "locName": "Montrose Dunes",
-    "howMany": 5,
-    "nice_date": "June 21",
-    "nice_time": "08:00 AM",
-    "checklist": "ebird.org/checklist/S361273423"
   },
   {
     "locName": "7901 South Farragut Drive",
