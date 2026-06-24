@@ -1,10 +1,17 @@
 [
   {
     "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 1,
-    "nice_date": "June 22",
-    "nice_time": "04:26 PM",
-    "checklist": "ebird.org/checklist/S361849721"
+    "howMany": 6,
+    "nice_date": "June 23",
+    "nice_time": "06:10 PM",
+    "checklist": "ebird.org/checklist/S362419278"
+  },
+  {
+    "locName": "US-IL-Chicago-Magic Hedge Bird Sanctuary - 41.9639x-87.6324",
+    "howMany": 3,
+    "nice_date": "June 23",
+    "nice_time": "03:45 PM",
+    "checklist": "ebird.org/checklist/S362319900"
   },
   {
     "locName": "Montrose Beach",
@@ -33,12 +40,5 @@
     "nice_date": "June 20",
     "nice_time": "08:08 PM",
     "checklist": "ebird.org/checklist/S360595110"
-  },
-  {
-    "locName": "Montrose Bird Harbor",
-    "howMany": 3,
-    "nice_date": "June 20",
-    "nice_time": "05:19 PM",
-    "checklist": "ebird.org/checklist/S360513009"
   }
 ]
