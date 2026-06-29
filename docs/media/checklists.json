@@ -1,24 +1,31 @@
 [
   {
-    "locName": "Montrose Dunes",
-    "howMany": 2,
-    "nice_date": "June 28",
-    "nice_time": "05:34 AM",
-    "checklist": "ebird.org/checklist/S364659484"
-  },
-  {
     "locName": "Montrose Point Bird Sanctuary",
     "howMany": 2,
-    "nice_date": "June 27",
-    "nice_time": "01:57 PM",
-    "checklist": "ebird.org/checklist/S364353891"
+    "nice_date": "June 28",
+    "nice_time": "09:12 PM",
+    "checklist": "ebird.org/checklist/S365107589"
+  },
+  {
+    "locName": "pier",
+    "howMany": 2,
+    "nice_date": "June 28",
+    "nice_time": "10:23 AM",
+    "checklist": "ebird.org/checklist/S364860062"
+  },
+  {
+    "locName": "Montrose Dunes",
+    "howMany": 7,
+    "nice_date": "June 28",
+    "nice_time": "10:00 AM",
+    "checklist": "ebird.org/checklist/S364952163"
   },
   {
     "locName": "Montrose Beach",
-    "howMany": 7,
-    "nice_date": "June 27",
-    "nice_time": "07:54 AM",
-    "checklist": "ebird.org/checklist/S364223268"
+    "howMany": 5,
+    "nice_date": "June 28",
+    "nice_time": "07:53 AM",
+    "checklist": "ebird.org/checklist/S364865075"
   },
   {
     "locName": "US-IL-Chicago-Magic Hedge Bird Sanctuary - 41.9639x-87.6324",
@@ -33,12 +40,5 @@
     "nice_date": "June 21",
     "nice_time": "09:24 AM",
     "checklist": "ebird.org/checklist/S361033588"
-  },
-  {
-    "locName": "7901 South Farragut Drive",
-    "howMany": 1,
-    "nice_date": "June 20",
-    "nice_time": "08:08 PM",
-    "checklist": "ebird.org/checklist/S360595110"
   }
 ]
