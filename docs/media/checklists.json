@@ -1,17 +1,24 @@
 [
   {
-    "locName": "Montrose Point Bird Sanctuary",
-    "howMany": 2,
-    "nice_date": "June 29",
-    "nice_time": "03:03 PM",
-    "checklist": "ebird.org/checklist/S365507594"
+    "locName": "Montrose Dunes",
+    "howMany": 5,
+    "nice_date": "July 1",
+    "nice_time": "05:19 AM",
+    "checklist": "ebird.org/checklist/S366127399"
   },
   {
-    "locName": "Montrose Dunes",
-    "howMany": 3,
-    "nice_date": "June 29",
-    "nice_time": "07:20 AM",
-    "checklist": "ebird.org/checklist/S365290735"
+    "locName": "Montrose Point Bird Sanctuary",
+    "howMany": 2,
+    "nice_date": "June 30",
+    "nice_time": "10:55 AM",
+    "checklist": "ebird.org/checklist/S365859055"
+  },
+  {
+    "locName": "Montrose Beach",
+    "howMany": 2,
+    "nice_date": "June 30",
+    "nice_time": "09:09 AM",
+    "checklist": "ebird.org/checklist/S365816489"
   },
   {
     "locName": "pier",
@@ -28,17 +35,10 @@
     "checklist": "ebird.org/checklist/S364865075"
   },
   {
-    "locName": "US-IL-Chicago-Magic Hedge Bird Sanctuary - 41.9639x-87.6324",
-    "howMany": 3,
-    "nice_date": "June 23",
-    "nice_time": "03:45 PM",
-    "checklist": "ebird.org/checklist/S362319900"
-  },
-  {
-    "locName": "sanctuary",
+    "locName": "Lincoln Park ",
     "howMany": 1,
-    "nice_date": "June 21",
-    "nice_time": "09:24 AM",
-    "checklist": "ebird.org/checklist/S361033588"
+    "nice_date": "June 25",
+    "nice_time": "03:25 PM",
+    "checklist": "ebird.org/checklist/S366037602"
   }
 ]
