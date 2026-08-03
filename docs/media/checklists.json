@@ -2,9 +2,16 @@
   {
     "locName": "Montrose Point Bird Sanctuary",
     "howMany": 1,
-    "nice_date": "August 1",
-    "nice_time": "12:22 PM",
-    "checklist": "ebird.org/checklist/S378848385"
+    "nice_date": "August 2",
+    "nice_time": "06:04 PM",
+    "checklist": "ebird.org/checklist/S379407906"
+  },
+  {
+    "locName": "Montrose Beach",
+    "howMany": 1,
+    "nice_date": "August 2",
+    "nice_time": "05:09 PM",
+    "checklist": "ebird.org/checklist/S379389125"
   },
   {
     "locName": "Montrose Dunes",
@@ -12,13 +19,6 @@
     "nice_date": "July 30",
     "nice_time": "08:17 PM",
     "checklist": "ebird.org/checklist/S378457725"
-  },
-  {
-    "locName": "Montrose Beach",
-    "howMany": 1,
-    "nice_date": "July 29",
-    "nice_time": "07:44 AM",
-    "checklist": "ebird.org/checklist/S377672144"
   },
   {
     "locName": "Sanctuary",
