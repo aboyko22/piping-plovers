@@ -1,5 +1,12 @@
 [
   {
+    "locName": "Montrose Bird Sanctuary",
+    "howMany": 2,
+    "nice_date": "August 23",
+    "nice_time": "06:40 AM",
+    "checklist": "ebird.org/checklist/S386121588"
+  },
+  {
     "locName": "Montrose Point Bird Sanctuary",
     "howMany": 1,
     "nice_date": "August 22",
